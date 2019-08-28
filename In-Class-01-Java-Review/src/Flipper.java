@@ -17,15 +17,28 @@ public class Flipper
         
         int count = in.nextInt();
         double headOrTail = 0.0; 
+        String word = ""; 
+        int columnCounter = 0; 
         
         for (int i = 0; i < count; i++)
         {
             headOrTail = Math.random();
-            
+                
             if(headOrTail < 0.5)
-                System.out.println("Tails");
-            else 
-                System.out.println("Heads");
+            {
+                word = "Tails"; 
+                System.out.printf("%-7s", word);
+            }
+            else
+            {
+                word = "Heads";
+                System.out.printf("%-7s", word);
+            }
+            columnCounter++; 
+            if(columnCounter%10 == 0)
+            {
+                System.out.println(); 
+            }
         }
     }
 

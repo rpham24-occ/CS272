@@ -19,14 +19,12 @@ public class ArrayWithLoops
             a[i] = (int)(Math.random() * ((75 - 25) + 1)) + 25;
         }
         
-        for(int i = 0; i < 5; i++)
+        int currentSize = a.length; 
+        for(int j = 0; j < currentSize; j++)
         {
-            int maxRow = i*20+20; 
-            for(int j = i*20; j < maxRow; j++)
-            {
-                System.out.print(a[j] + " ");
-            }
-            System.out.println();
+            if(j%20 == 0 && j != 0)
+                System.out.println(); 
+            System.out.print(a[j] + " "); 
         }
 
     }
