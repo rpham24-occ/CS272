@@ -26,7 +26,7 @@ public class ArrayWithLoops
             {
                 System.out.print(a[j] + " ");
             }
-            System.out.println(); 
+            System.out.println();
         }
 
     }
