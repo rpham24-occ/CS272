@@ -20,20 +20,26 @@ public class TestShapes
         double min = 0; 
         double sum = 0; 
         
+        Circle[] arr = new Circle[100];
+        
         for (int i = 0; i < 100; i++)
         {
-            Circle k = new Circle(Math.random()*5 + 1);
-            sum += k.getArea(); 
-            if(i == 0)
-            {
-                max = k.getArea(); 
-                min = k.getArea(); 
-            }
+            arr[i] = new Circle(Math.random()*5 + 1);
             
-            if(k.getArea() > max)
-                max = k.getArea(); 
-            if(k.getArea() < min)
-                min = k.getArea();
+        }
+        
+        sum += arr[0].getArea();
+        max = arr[0].getArea(); 
+        min = arr[0].getArea();
+        
+        for (int j = 0; j < 100; j++)
+        {
+            sum += arr[j].getArea(); 
+                     
+            if(arr[j].getArea() > max)
+                max = arr[j].getArea(); 
+            if(arr[j].getArea() < min)
+                min = arr[j].getArea();
         }
         
         System.out.printf("min: %.2f\nmax: %.2f\nsum: %.2f\n", min, max, sum);
