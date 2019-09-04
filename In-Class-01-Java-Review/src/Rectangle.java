@@ -1,4 +1,9 @@
-
+/**
+ * 
+ * @author Richard Pham
+ * @version September 4, 2019
+ *
+ */
 public class Rectangle
 {
     private double width; 

@@ -1,6 +1,6 @@
 /**
  * 
- * @author rpham24
+ * @author Richard Pham
  * @version September 4, 2019
  *
  */
