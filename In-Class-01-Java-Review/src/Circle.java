@@ -20,7 +20,7 @@ public class Circle
     
     public double getArea()
     {
-        double area = (1/2)*Math.PI*Math.pow(radius, 2); 
+        double area = Math.PI*Math.pow(radius, 2); 
         return area; 
     }
 
@@ -34,6 +34,12 @@ public class Circle
     public void setRadius(double radius)
     {
         this.radius = radius;
+    }
+    
+    public void setArea(double a)
+    {
+        this.radius = a/(Math.PI);
+        this.radius = Math.sqrt(this.radius);
     }
     
     public String toString()
