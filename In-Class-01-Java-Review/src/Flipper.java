@@ -13,9 +13,9 @@ public class Flipper
     public static void main(String[] args)
     {
         System.out.print("How many times do you want to flip a coin: ");
-        Scanner in = new Scanner(System.in); 
+        Scanner cin = new Scanner(System.in); 
         
-        int count = in.nextInt();
+        int count = cin.nextInt();
         double headOrTail = 0.0; 
         String word = ""; 
         int columnCounter = 0; 
