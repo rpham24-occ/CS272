@@ -6,7 +6,7 @@ public class IDCard extends Card
     public IDCard()
     {
         super();
-        
+        idNumber = "";
     }
     
     public IDCard(String n, String id)

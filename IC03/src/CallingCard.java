@@ -7,6 +7,8 @@ public class CallingCard extends Card
     public CallingCard()
     {
         super(); 
+        cardNumber = 0; 
+        PIN = 0; 
     }
     
     public CallingCard(String n, int CN, int p)

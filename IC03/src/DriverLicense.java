@@ -6,6 +6,7 @@ public class DriverLicense extends Card
     public DriverLicense()
     {
         super(); 
+        expirationYear = 0; 
     }
     
     public DriverLicense(String n, int expiration)
