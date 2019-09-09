@@ -17,5 +17,8 @@ public class CallingCard extends Card
        this.cardNumber = CN; 
        this.PIN = p;
     }
-
+    public String format()
+    {
+       return super.format() + " cardNumber: " + this.cardNumber + " PIN: " + this.PIN; 
+    }
 }
