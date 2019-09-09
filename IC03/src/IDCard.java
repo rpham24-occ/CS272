@@ -6,13 +6,13 @@ public class IDCard extends Card
     public IDCard()
     {
         super();
-        idNumber = "";
+        this.idNumber = "";
     }
     
     public IDCard(String n, String id)
     {  
        super(n);
-       idNumber = id;
+       this.idNumber = id;
     }
     
     

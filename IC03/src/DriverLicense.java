@@ -1,17 +1,17 @@
 
 public class DriverLicense extends Card
 {
-    private int expirationYear; 
+    private String expirationYear; 
     
     public DriverLicense()
     {
         super(); 
-        expirationYear = 0; 
+        this.expirationYear = "";
     }
     
-    public DriverLicense(String n, int expiration)
+    public DriverLicense(String n, String expiration)
     {
         super(n); 
-        expirationYear = expiration; 
+        this.expirationYear = expiration; 
     }
 }

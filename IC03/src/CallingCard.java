@@ -1,21 +1,21 @@
 
 public class CallingCard extends Card
 {
-    private int cardNumber;
-    private int PIN;
+    private String cardNumber;
+    private String PIN;
     
     public CallingCard()
     {
         super(); 
-        cardNumber = 0; 
-        PIN = 0; 
+        this.cardNumber = ""; 
+        this.PIN = ""; 
     }
     
-    public CallingCard(String n, int CN, int p)
+    public CallingCard(String n, String CN, String p)
     {  
        super(n);
-       cardNumber = CN; 
-       PIN = p;
+       this.cardNumber = CN; 
+       this.PIN = p;
     }
 
 }
