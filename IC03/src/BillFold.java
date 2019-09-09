@@ -10,4 +10,14 @@ public class BillFold
         this.card1 = card1; 
         this.card2 = card2; 
     }
+    
+    public void addCard(Card c)
+    {
+        
+    }
+    
+    public String formatCards()
+    {
+        return ""; 
+    }
 }
