@@ -15,6 +15,9 @@ public class IDCard extends Card
        this.idNumber = id;
     }
     
-    
+    public String format()
+    {
+       return super.format() + " ID Number: " + idNumber;
+    }
 
 }
