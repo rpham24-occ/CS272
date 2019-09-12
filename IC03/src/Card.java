@@ -1,7 +1,7 @@
 
 public class Card
 {
-   private String name;
+   protected String name;
 
    public Card()
    {
@@ -27,4 +27,19 @@ public class Card
    {
       return "Card holder: " + name;
    }
+   
+   public String toString()
+   {
+       return "Card [Name=" + name + "]";
+   }
+
+   public boolean equals(Card c)
+   {
+       if (this.getClass() == c.getClass() && name == c.getName())
+       {
+           return true; 
+       }
+       return false;
+   }
+
 }

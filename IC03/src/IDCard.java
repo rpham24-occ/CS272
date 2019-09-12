@@ -20,4 +20,18 @@ public class IDCard extends Card
        return super.format() + " ID Number: " + idNumber;
     }
 
+    public String toString()
+    {
+        return "IDCard[Name=" + getName() + ",ID=" + idNumber + "]";
+    }
+    
+    public boolean equals(IDCard c)
+    {
+        if (super.equals(c) && idNumber.equals(c.idNumber))
+        {
+            return true;
+        }
+        return false;
+    }
+
 }
